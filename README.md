@@ -1,6 +1,6 @@
 # RT1 First Assignment 
 
-## Installing and running
+## Installing and Running
 To run this code, python 3 must be installed, as well as some libraries (pypybox2d, pygame, time, threading). Once all the libraries are installed, clone this github repository using the command below.
 ```bash
 $ git clone https://github.com/OuassimMilous/RT1
@@ -14,7 +14,7 @@ This should successfully open a new window for the simulator, and the simulator 
 
 
 
-## The algorithm explained:
+## The Algorithm Explained:
 
 Start:
 
@@ -29,20 +29,20 @@ Main Loop:
 
 - If it isn't:
 
-- - Find the closest free token.
-- - If a free token is found, go and grab it.
-- - If no free tokens are found:
-- - - Check if all tokens are in the goal If yes, break the loop. If not, turn around until you find more tokens.
+ - Find the closest free token.
+ - If a free token is found, go and grab it.
+ - If no free tokens are found:
+  - Check if all tokens are in the goal If yes, break the loop. If not, turn around until you find more tokens.
 
 - If it is:
-- - Find the closest goal.
-- - If a goal is found, go release the token.
-- - If no goal is found, turn around until you find one.
+  - Find the closest goal.
+  - If a goal is found, go release the token.
+  - If no goal is found, turn around until you find one.
 End loop.
 
 if the loop ends it means all the tokens are in the goal aand the program ends.
 
-## pseudo Code:
+## The Pseudo Code:
 
 ```
 
@@ -165,12 +165,11 @@ function main():
 # Run the main function
 Call main()
 
-
-'''
-
+```
 
 
-## Possible improvements
+
+## Possible Improvements
 
 - we can get the robot to put the tokens in the middle instead of putting them next to the first token it sees.
 - sometimes for long distances the robot fails to see the target and loses its direction. my solution was to turn around again until it finds it, but I'm sure it could be better optimized.
